@@ -1,6 +1,8 @@
 class SnippetsController < ApplicationController
+
   def index
     @quotes = Quote.all
+    @quote = Quote.new
   end
 
   def new
@@ -8,11 +10,8 @@ class SnippetsController < ApplicationController
   end
 
   def create
+    @quotes = Quote.all
     @quote = Quote.new(params.require(:quote).permit(:author, :snippet))
-    if @quote.save
-      redirect_to root_path
-    else
-      render :new
-    end
+    @quote.save
   end
 end

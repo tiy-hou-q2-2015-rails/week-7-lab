@@ -1,9 +1,11 @@
 <h1>Snippet</h1>
 
-<%= link_to "New Quote", new_quote_path %>
+<%= link_to "New Quote", new_quote_path, id: "new-form" %>
 
-<ul>
-  <% @quotes.each do |quote| %>
-    <li><%= quote.snippet %> - <em><%= quote.author %></em></li>
-  <% end %>
-</ul>
+<div id="new-quote-form">
+  <%= render partial: "form" %>
+</div>
+
+<div id="quotes">
+  <%= render partial: "quotes" %>
+</div>

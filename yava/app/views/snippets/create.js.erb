@@ -1,0 +1,13 @@
+// actionname.format.preprocessor
+// index.html.erb
+// create.js.erb
+
+<% if @quote.persisted? %>
+  // Show it
+  $("#quotes").html("<%= j render partial: "quotes" %>");
+  // blank form?
+  <% @quote = Quote.new %>
+  $("#new-quote-form").html("<%= j render partial: "form" %>");
+<% else %>
+  $("#new-quote-form").html("<%= j render partial: "form" %>");
+<% end %>
