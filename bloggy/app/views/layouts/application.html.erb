@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bloggy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<div class="container">
+
+  <header>
+    <div class="page-title">
+      <h2>Bloggy Blogg</h2>
+    </div>
+  </header>
+
+  <article class="col-md-8">
+      <%= yield %>
+  </article>
+  <aside class="col-md-4">
+
+    <h2>Contact us!</h2>
+    <div id="contact-form">
+      <%= render partial: "pages/contact_form" %>
+    </div>
+
+  </aside>
+</div>
+
+
+</body>
+</html>

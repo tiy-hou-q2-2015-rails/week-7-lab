@@ -1,0 +1,10 @@
+// if sent
+//   say thanks
+// else
+//   show form
+
+<% if @contact_form.errors.any? %>
+  $("#contact-form").html("<%= j render partial: 'pages/contact_form' %>");
+<% else %>
+  $("#contact-form").html("<%= j render partial: 'thanks' %>");
+<% end %>
