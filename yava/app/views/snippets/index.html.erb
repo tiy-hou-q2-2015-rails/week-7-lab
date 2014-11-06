@@ -1,10 +1,35 @@
 <h1>Snippet</h1>
 
-<%= link_to "New Quote", new_quote_path, id: "new-form" %>
+<%= link_to "delete all", delete_quotes_path, remote: true, method: :delete, data: {confirm: "Y R U SHURE BROSEF"} %>
 
-<div id="new-quote-form">
-  <%= render partial: "form" %>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">New Quote?</h4>
+      </div>
+      <div class="modal-body">
+        <div id="new-quote-form">
+          <%= render partial: "form" %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  New Quote
+</button>
+
 
 <div id="quotes">
   <%= render partial: "quotes" %>

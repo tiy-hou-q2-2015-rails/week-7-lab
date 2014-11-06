@@ -13,5 +13,11 @@ class SnippetsController < ApplicationController
     @quotes = Quote.all
     @quote = Quote.new(params.require(:quote).permit(:author, :snippet))
     @quote.save
+
+  end
+
+  def destroy_all
+    Quote.destroy_all
+    @quotes = Quote.all
   end
 end

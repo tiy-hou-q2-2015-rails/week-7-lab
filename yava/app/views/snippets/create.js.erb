@@ -8,6 +8,7 @@
   // blank form?
   <% @quote = Quote.new %>
   $("#new-quote-form").html("<%= j render partial: "form" %>");
+  $("#myModal").modal("hide");
 <% else %>
   $("#new-quote-form").html("<%= j render partial: "form" %>");
 <% end %>
