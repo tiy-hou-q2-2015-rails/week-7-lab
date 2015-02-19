@@ -79,6 +79,5 @@ Mockups:
 
 * Visit [pinterest](https://www.pinterest.com/)
 * Read [Remote Rails](http://www.alfajango.com/blog/rails-3-remote-links-and-forms/)
-* [Sample Site](http://remote-form.herokuapp.com)
 * [Other Sample Site](https://myinterests.herokuapp.com/)
 * [3rd Sample Site](https://calm-garden-8016.herokuapp.com/)
