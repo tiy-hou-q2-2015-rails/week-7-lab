@@ -1,0 +1,17 @@
+{
+    "name": "week-7-lab",
+    "version": "0.0.1",
+    "title": "Pinterest Week 7 Lab",
+    "description": "Pinterest Week 7 Lab",
+    "difficultyModes": [
+        "Easy",
+        "Hard"
+    ],
+    "keywords": [
+        "JavaScript",
+        "Modals",
+        "Rails",
+        "Remote Forms",
+        "Ruby"
+    ]
+}
