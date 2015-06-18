@@ -39,8 +39,8 @@ After completing this assignment, you be able to effectively use
 * Create a Pinterest System. Let's call it "Interests"
 * Secure using an DIY authentication system
 * Allow people to upload a screenshot and specify a URL. Allow optionally notes
-* There should be no page loads during the entire project, only remote links and
-  remote forms
+* There should be no page loads during the entire project, except signin and
+  home page
 * Live on Heroku
 * Use `https://github.com/JangoSteve/remotipart` to add ability to upload files
   on remote JS forms
@@ -48,10 +48,10 @@ After completing this assignment, you be able to effectively use
 Mockups:
 --------
 
-![detail](detail.png)
 ![home](home.png)
 ![list](list-interests.png)
 ![new](new-interest.png)
+![detail](detail.png)
 
 
 ## Easy Mode
@@ -60,7 +60,6 @@ Mockups:
             
 ## Hard Mode
 
-* Add an autocomplete dropdown text box that lets you search your notes and urls
 * Have the main homepage, and sign-in / sign-up should not be their own pages,
   but should be re-rendered when the user signs in
 * Sign in should also be a modal
@@ -68,6 +67,7 @@ Mockups:
 ## Nightmare Mode
 
 * Pull JSON for the stored pins from /pins.json and render using Handlebars
+* Add an autocomplete dropdown text box that lets you search your notes and urls
 * Have tests for your models
 
 
